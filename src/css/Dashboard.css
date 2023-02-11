@@ -1,0 +1,74 @@
+.App{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+ 
+.app-blur{
+    background: linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)),url("https://wpengine.com/builders/wp-content/uploads/wordpress-default-gradients.jpg");
+    background-size:cover; 
+
+}
+
+.studentId-input-header{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+.studentId-input-container{
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);    
+    display: flex;
+    flex-direction: column;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 50px 30px ;
+} 
+
+.studentId-input-form{
+    text-align: center;
+}
+.studentId-input{
+    width: 250px;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(225, 225, 225);
+    background-color: rgb(239, 239, 239);
+    border-radius: 5px;
+}
+
+.studentId-input::placeholder{
+    color: black;
+}
+
+.studentId-input:focus{
+    border: 1px solid  #00a754;
+    outline: none !important;
+}
+
+.save-rollno-button{
+    width:250px;
+    padding: 7px 0;
+    background-color: #00a754;
+    color: white;
+}
+
+
+.rollno-error{
+    position: absolute;
+    bottom: 10px;
+    font-size: 13px;
+}
+
+@media only screen and (max-width:500px)
+{
+    .studentId-input-container{
+        width: 90%;
+    }
+}

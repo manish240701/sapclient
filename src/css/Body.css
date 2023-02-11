@@ -1,0 +1,31 @@
+.body-container{
+    height: 100vh;
+    width: 73%;
+    position: absolute;
+    right: 0;
+    background-color: rgb(240, 239, 239);
+}
+
+.body-full-width{
+    width: 96%;
+}
+
+.body-shrink
+{
+    min-width: 72%;
+}
+
+@media only screen and (min-width: 700px) and (max-width:850px){
+    .body-container{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .body-shrink{
+        display: none;
+    }
+    .body-container{
+        width: 88%;
+    }
+}
